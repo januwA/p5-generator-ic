@@ -24,6 +24,9 @@ let downloadBtn;
 let downloadFlutterBtn;
 
 function setup() {
+  // 忽略用户计算机设置的系统屏幕显示比例
+  pixelDensity(1);
+  
   p5Canvas = createCanvas(200, 200);
   background(0);
   p5Canvas.hide();
